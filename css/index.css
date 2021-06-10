@@ -1,0 +1,46 @@
+html,
+body {
+    max-width: 100%;
+    height: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.03cm;
+    line-height: 1,6 ;
+    background: url("https://i.ibb.co/xf7VH3S/background-Pets2.png");
+}
+
+.container {
+    width: 100%;
+    max-width: 2000px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .images {
+    width: 30%;
+    align-content: center;
+}
+
+.container .title h1 {
+    margin-right: 1300px;
+}
+
+.container .images img {
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.container .images h4 {
+    text-align: center;
+    margin-top: -80px;
+    font-weight: 600;
+    
+}
+
+.container .images:hover {
+    transform: translate(-15px);
+    box-shadow: 0 12px 14px rgba(0, 0, 0, 2);
+}
