@@ -7,49 +7,9 @@ body {
 div#header {
     background-color: blanchedalmond;
 }
-
-
-
 ul {
     float: right;
-    list-style: none;
-    margin-top: -100px;
-    display: block;
-    background-color: blanchedalmond;
-}
-
-.nav > li {
-    float: left;
-}
-
-.nav li a {
-    background-color: blanchedalmond;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    padding: 10px 4px;
-    display: block;
-}
-
-.nav li a:hover {
-    background-color: blue;
-    color: blueviolet;
-}
-
-.nav li ul {
-    display: none;
-    position: absolute;
-}
-.na {
-    float: center;
-    list-style: none;
-    margin-top: -100px;
-    display: block;
-    background-color: blueviolet;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    padding: 10px 900px;
+    margin-top: 0%;
 }
 
 .container {
@@ -91,3 +51,4 @@ h1 {
     transform: translate(-15px);
     box-shadow: 0 12px 14px rgba(0, 0, 0, 2);
 }
+
