@@ -24,7 +24,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 10px 10%;
-    background-color: rgba(86, 108, 117, 0.774);
+    background-color: #9BA5AD;
 }
 
 .logo {
@@ -38,6 +38,7 @@ header {
 }
 
 .nav_links li {
+    margin-top: 5px;
     display: inline-block;
     padding: 0px 20px;
 }
@@ -47,8 +48,7 @@ header {
 }
 
 .nav_links li a:hover {
-    color: 
-    #0088a9;
+    color: black;
 }
 
 button {
@@ -63,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+    background-color: black;
 }
 
 ul {
@@ -86,7 +86,7 @@ ul {
 }
 
 h1 {
-    margin-top: 0;
+    margin-top: 20px;
     color: white;
     text-align: center;
     font-family:'Bell MT';
