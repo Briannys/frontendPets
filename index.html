@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
     <title>4-legged citizens</title>
 </head>
 
@@ -34,18 +36,88 @@
     
     <div class="container">
         <div class="images">
-            <img src="https://i.ibb.co/8jPW8jt/propietario-1.png" alt="" style="width: 100%; text-align: center">
+            <img src="https://i.ibb.co/8jPW8jt/propietario-1.png" alt="" style="width: 100%; text-align: center" id="bton-owner">
             <h4>Owner</h4>
         </div>
         <div class="images">
-            <img src="https://i.ibb.co/3vgRCYh/vet.png" alt="" style="width: 100%; text-align: center">
+            <img src="https://i.ibb.co/3vgRCYh/vet.png" alt="" style="width: 100%; text-align: center" id="bton-vet">
             <h4>Vet</h4>
         </div>
         <div class="images">
-            <img src="https://i.ibb.co/pxDfBgt/funcionario.png" alt="" style="width: 100%; text-align: center">
+            <img src="https://i.ibb.co/pxDfBgt/funcionario.png" alt="" style="width: 100%; text-align: center" id="bton-official">
             <h4>Official</h4>
         </div>
     </div>
+    <!------------------------------------------------------------------------>
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a><!--icono "X"-->
+        <h3>Owner</h3>
+        <h4> Sign In</h4>
+        <form action="">
+          <div class="contenedor-inputs">
+            <img src="images/user.png" > 
+            <input type="User" placeholder="User Name">
+            <img src="images/candado1.png" > 
+            <input type="Password" placeholder="Password" >
+            <h5>You have not yet registered?</h5>
+            <a href="">   Click Here</a>
+
+            
+          </div>
+          <input type="submit" class="btn-submit" value="Sign In">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+<!------------------------------------------------------->
+  <div class="overlayVet" id="overlayVet">
+    <div class="popupVet" id="popupVet">
+      <a href="#" id="btn-cerrar-popupVet" class="btn-cerrar-popupVet"><i class="fas fa-times"></i></a><!--icono "X"-->
+      <h3>Veterynary</h3>
+      <h4>Please Fill The information</h4>
+      <form action="">
+        <div class="contenedor-inputs">
+          <img src="images/user.png" > 
+          <input type="text" placeholder="User Name">
+          <img src="images/candado1.png" > 
+            <input type="email" placeholder="Password">
+            <h5>You have not yet registered?</h5>
+            <a href=""> Click Here</a>
+
+
+        </div>
+        <input type="submit" class="btn-submitVet" value="Sign In">
+      </form>
+    </div>
+  </div>
+</div>
+<!---------------------------------------------------------------->
+<div class="overlayOff" id="overlayOff">
+  <div class="popupOff" id="popupOff">
+    <a href="#" id="btn-cerrar-popupOff" class="btn-cerrar-popupOff"><i class="fas fa-times"></i></a><!--icono "X"-->
+    <h3>Officer</h3>
+    <h4>Please Fill The information</h4>
+    <form action="">
+      <div class="contenedor-inputs">
+        <img src="images/user.png" > 
+        <input type="text" placeholder="User Name">
+        <img src="images/candado1.png" > 
+            <input type="email" placeholder="Password">
+            <h5>You have not yet registered?</h5>
+
+            <a href="" class="RegiOFF" > Click Here </a>
+
+      </div>
+      <input type="submit" class="btn-submitOff" value="Sign In">
+    </form>
+  </div>
+</div>
+</div>
+  <script src="js/popup.js"></script>
+
 
 </body>
 
