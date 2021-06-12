@@ -163,8 +163,8 @@ header {
 .popupSignin.active h4 { 
 	animation: entradaSubtitulo 0s ease .0s forwards; 
 }
-.popupSignin.active .contenedor-inputs { 
-	animation: entradaInputs 0s linear 0s forwards; 
+.popupSignin.active .contenedor-inputs {
+	animation: entradaInputs 0s linear 0s forwards;
 }
 
 
@@ -230,6 +230,7 @@ header {
 	display: flex;
 	width: 100%;
 	margin-bottom: 15px;
+
   }
   
   .icon {
@@ -244,10 +245,11 @@ header {
 	width: 100%;
 	padding: 10px;
 	outline: none;
+
   }
   
   .input-field:focus {
-	border: 2px solid rgb(136, 170, 204);
+	border: 0px solid rgb(136, 170, 204);
   }
 
   
