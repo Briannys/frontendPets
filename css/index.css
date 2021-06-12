@@ -72,10 +72,9 @@ ul {
     margin-top: 0%;
 }
 
-.contenedor-inputs img{
-    float: left;
-    width: 50px;
-    height: 50px;
+.input user{
+	width: 100%;
+	background: blue;
 }
 
 .container {
@@ -113,8 +112,14 @@ h1 {
     margin-top: -80px;
     font-weight: 600;
     color: white;
+
     
-}
+}h5{
+	color: white;
+	 text-align: center;
+	
+	 font-weight: bold;
+ }
 
 .container .images:hover {
     transform: translate(-15px);
@@ -251,12 +256,16 @@ h1 {
 .popup form .contenedor-inputs input {
 	width: 85%;
 	margin-bottom: 20px;
-	height: 45px;
+	height: 48px;
 	font-size: 18px;
 	line-height: 52px;
 	text-align: center;
-	border: 1px solid #BBBBBB;
+	border: none;
+	padding: 10px;
+	outline: none;
+
 }
+
 
 .popup form .btn-submit {
 	padding: 0 20px;
@@ -349,7 +358,9 @@ h1 {
 
 .popupVet form .contenedor-inputs {
 	opacity: 0;
-}
+
+
+ }
 
 .overlaySignin{
     background: rgba(0,0,0,.3);
@@ -466,7 +477,7 @@ h1 {
 	font-size: 18px;
 	line-height: 52px;
 	text-align: center;
-	border: 1px solid #BBBBBB;
+	border: none;
 }
 
 .popupVet form .btn-submit {
@@ -581,7 +592,7 @@ h1 {
 	font-size: 18px;
 	line-height: 52px;
 	text-align: center;
-	border: 1px solid #BBBBBB;
+	border: none;
 }
 
 .popupOff form .btn-submit {
@@ -624,6 +635,15 @@ h1 {
 .RegiOFF:hover{
     text-decoration-color: blue;
 
+}
+.icon {
+	padding: 15px;
+	background: rgb(105, 123, 141);
+	color: white;
+	min-width: 50px;
+	min-height: 45px;
+	text-align: center;
+	border-right: 0px;
 }
 @keyframes entradaTitulo {
 	from {
