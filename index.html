@@ -21,12 +21,11 @@
       <img class="logo" src="https://i.ibb.co/ckDdYBB/Ciudadados-de-4-Patas.png" alt="logo">
       <nav>
         <ul class="nav_links">
-          <li><a href="#">Sign up</a></li>
+          <li><a href="#" id="bton-owner">Sign up</a></li>
           <li><a href="#">Sign in</a></li>
           <li><a href="#">About</a></li>
         </ul>
       </nav>
-      
       <a class= "cta" href="contact.html"><button>Contact</button></a>
     </header>
 
@@ -101,13 +100,38 @@
             <input type="email" placeholder="Password">
             <h5>You have not yet registered?</h5>
             <a href="" class="RegiOFF" > Click Here </a>
-
       </div>
       <input type="submit" class="btn-submit" value="Sign In">
     </form>
   </div>
 </div>
 </div>
+
+  <div class="overlaySignin" id="overlaySignin">
+          <div class="popupSignin" id="popupSignin">
+          <div class="images">
+            <a href="owneRegister.html">
+            <img src="https://i.ibb.co/8jPW8jt/propietario-1.png" alt="" style="width: 100%; text-align: center" id="bton-owner">
+          </a>
+            <h4>Owner</h4>
+        </div>
+        
+        <div class="images">
+          <a href="vetRegister.html">
+            <img src="https://i.ibb.co/3vgRCYh/vet.png" alt="" style="width: 100%; text-align: center" id="bton-vet">
+            <h4>Vet</h4>
+          </a>
+        </div>
+
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <div class="images">
+          <a href="officialRegister.html">
+            <img src="https://i.ibb.co/pxDfBgt/funcionario.png" alt="" style="width: 100%; text-align: center" id="bton-official">
+            <h4>Official</h4>
+        </a>
+        </div>
+      </div>
+    </div>
   <script src="js/popup.js"></script>
 
 

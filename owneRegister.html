@@ -24,11 +24,11 @@
         <ul class="nav_links">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="#" id="bton-owner">Sign up</a></li>
-          <li><a href="#" id="bton-owne">Sign in</a></li>
+          <li><a href="#">Sign in</a></li>
           <li><a href="#">About</a></li>
         </ul>
       </nav>
-      
+      <a class= "cta" href="contact.html"><button>Contact</button></a>
     </header>
     </nav>
 
@@ -36,22 +36,42 @@
       <div class="card-panel">
         <div class="text-center">
           <img src="https://i.ibb.co/ckDdYBB/Ciudadados-de-4-Patas.png" alt="Logo" class="img-fluid w-50" >
-          <h1>Contact with us!</h1>
+          <h1>Owner Register</h1>
         </div>
         <form action="/action_page.php" style="max-width:500px;margin:auto">
           <div class="input-container">
             <i class="fa fa-user icon"></i>
-            <input class="input-field" type="text" placeholder="Name and last name " name="usrnm">
+            <input class="input-field" type="text" placeholder="Name and last name" name="usrnm">
           </div>
         
           <div class="input-container">
             <i class="fa fa-envelope icon"></i>
             <input class="input-field" type="text" placeholder="Email" name="email">
           </div>
+
+          <div class="input-container">
+            <i class="fas fa-map-marked-alt icon"></i>
+            <input class="input-field" type="text" placeholder="Adress" name="Adress">
+          </div>
+
+          <div class="input-container">
+            <i class="fas fa-location-arrow icon"></i>
+            <input class="input-field" type="text" placeholder="Neighborhood" name="neighborhood">
+          </div>
+
+          <div class="input-container">
+            <i class="fas fa-user-alt icon"></i>
+            <input class="input-field" type="text" placeholder="Username" name="username">
+          </div>
           
           <div class="input-container">
-            <i class="fas fa-comments icon"></i>
-            <input class="input-field" type="text" placeholder="Comments" name="comments">
+            <i class="fas fa-lock-open icon"></i>
+            <input class="input-field" type="password" placeholder="Password" name="pwrd">
+          </div>
+
+          <div class="input-container">
+            <i class="fas fa-lock icon"></i>
+            <input class="input-field" type="password" placeholder="Confirm password" name="Confirm">
           </div>
         
           <button type="submit" class="btn">Send</button>
@@ -62,52 +82,30 @@
       <div class="overlay" id="overlay">
           <div class="popup" id="popup">
           <div class="images">
-            <a href="owneRegister.html">
+            <a href="index.html">
             <img src="https://i.ibb.co/8jPW8jt/propietario-1.png" alt="" style="width: 100%; text-align: center" id="bton-owner">
           </a>
             <h4>Owner</h4>
         </div>
         
         <div class="images">
-            <img src="https://i.ibb.co/3vgRCYh/vet.png" alt="" style="width: 100%; text-align: center" id="bton-vet">
-            <h4>Vet</h4>
+            <a href="vetRegister.html">
+                <img src="https://i.ibb.co/3vgRCYh/vet.png" alt="" style="width: 100%; text-align: center" id="bton-vet">
+                <h4>Vet</h4>
+              </a>
         </div>
 
         <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
         <div class="images">
-            <img src="https://i.ibb.co/pxDfBgt/funcionario.png" alt="" style="width: 100%; text-align: center" id="bton-official">
-            <h4>Official</h4>
+            <a href="officialRegister.html">
+                <img src="https://i.ibb.co/pxDfBgt/funcionario.png" alt="" style="width: 100%; text-align: center" id="bton-official">
+                <h4>Official</h4>
+            </a>
         </div>
   
         </div>
       </div>
     </div>
-
-    <div class="overlay" id="overlay">
-      <div class="popup" id="popup">
-      <div class="images">
-        <a href="index.html">
-        <img src="https://i.ibb.co/8jPW8jt/propietario-1.png" alt="" style="width: 100%; text-align: center" id="bton-owne">
-      </a>
-        <h4>Owner</h4>
-    </div>
-    
-    <div class="images">
-      <a href="vetRegister.html">
-        <img src="https://i.ibb.co/3vgRCYh/vet.png" alt="" style="width: 100%; text-align: center" id="bton-vet">
-        <h4>Vet</h4>
-      </a>
-    </div>
-
-    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-    <div class="images">
-        <img src="https://i.ibb.co/pxDfBgt/funcionario.png" alt="" style="width: 100%; text-align: center" id="bton-official">
-        <h4>Official</h4>
-    </div>
-
-    </div>
-  </div>
-</div>
     <script src="js/popup.js"></script>
 
 </body>
