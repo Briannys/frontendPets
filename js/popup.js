@@ -3,7 +3,6 @@ overlay = document.getElementById('overlay'),
 popup = document.getElementById('popup'),
 btnCerrarPopup = document.getElementById('btn-cerrar-popup');
 
-
 ///////////////////////////////////////////////////
     btnAbrirPopupVet = document.getElementById('bton-vet'),
     overlayVet = document.getElementById('overlayVet'),
@@ -24,7 +23,6 @@ btnAbrirPopup.addEventListener('click', function(){
 	popup.classList.add('active');
 
 });
-
 btnCerrarPopup.addEventListener('click', function(e){
 	e.preventDefault();
 	overlay.classList.remove('active');
