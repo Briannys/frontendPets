@@ -19,6 +19,22 @@ li, a, button {
     text-decoration: none;
 }
 
+
+header .cta button {
+    margin-top: -20px;
+    margin-right: 30px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header .cta button:hover {
+    background-color: black;
+}
+
 header {
     display: flex;
     justify-content: flex-end;
@@ -51,59 +67,7 @@ header {
     color: black;
 }
 
-.container .form .form-header .form-title {
-    font-weight: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-    text-align: center;
-}
 
-.container .form {
-    background: rgba(255, 255, 255, 0.932);
-    width: 90%;
-    max-width: 750px;
-    margin: auto;
-    padding: 5px 35px;
-    margin-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 7px;
-}
-
-.container .form .form-label {
-    display: block;
-    font-size: 16px;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-}
-
-.container .form .form-input,
-.form-selec,
-.form-select .form-option {
-    background: rgba(0, 0, 0, .1);
-    border: none;
-    outline: none;
-    border-bottom: 2px solid;
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border-radius: 2px;
-    font-size: 14px;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.container .form .submit {
-    border-radius: 8px;
-    background-color: #917373;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: auto;
-}
 
 .overlay .popup {
     width: 40%;
@@ -140,7 +104,14 @@ header {
 
 }
 
-.card-panel {
+.container {
+	margin-top: 40px;
+	width: 600px;
+	height: 100px;
+	background: transparent;
+}
+
+.container .card-panel {
     box-shadow: rgba(0, 0, 0, 0.1) 0 5px 40px, rgba(0, 0, 0, 0.1) 0 5px 10px;
     border-bottom: 10px solid transparent;
     transition: box-shadow 0.25s;
@@ -148,34 +119,52 @@ header {
     margin: 0.5rem 0 1rem;
     border-radius: 2px;
     background-color: #fff;
-  }
-  
-  /* Font Awesome Icons */
-  
-  .form-group a i {
-    font-family: FontAwesome;
-    margin: 0 auto;
-    font-size: 5rem;
-    font-style: normal;
-  }
-  
-  .min-container .card-panel form .fa {
-    top: 13px;
-    right: 1rem;
-  }
-  
-  /* Media Queries */
-  
-  @media (min-width: 768px) {
-    .min-container {
-      max-width: 650px;
-    }
-  }
-  
-  .min-container {
-    margin: 0 auto;
+	opacity: 0.9;
   }
 
+  .container .card-panel h1{
+	  margin-top: -20px;
+  }
+
+  .input-container {
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+  }
+  
+  .icon {
+	padding: 10px;
+	background: rgb(105, 123, 141);
+	color: white;
+	min-width: 50px;
+	text-align: center;
+  }
+  
+  .input-field {
+	width: 100%;
+	padding: 10px;
+	outline: none;
+  }
+  
+  .input-field:focus {
+	border: 2px solid rgb(136, 170, 204);
+  }
+
+  
+  .btn {
+	background-color: rgb(65, 124, 184);
+	color: white;
+	padding: 15px 10px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+  }
+  
+  .btn:hover {
+	opacity: 1;
+  }
 .container article bton-owner {
     padding: 0 20px;
 	margin-bottom: 20px;
@@ -265,12 +254,6 @@ header {
 	color: #000;
 }
 
-.popup h3 {
-	font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	opacity: 0;
-}
 
 .popup h4 {
 	font-size: 26px;
@@ -315,9 +298,6 @@ header {
 	transform: scale(1); opacity: 1; 
 }
 
-.popup.active h3 { 
-	animation: entradaTitulo 0s ease 0s forwards; 
-}
 .popup.active h4 { 
 	animation: entradaSubtitulo 0s ease .0s forwards; 
 }
@@ -367,18 +347,6 @@ header {
 .popupVet .btn-cerrar-popupVet:hover {
 	color: #000;
 
-}.popupVet h3 {
-	font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	opacity: 0;
-}
-
-.popupVet h4 {
-	font-size: 26px;
-	font-weight: 300;
-	margin-bottom: 40px;
-	opacity: 0;
 }
 
 .popupVet form .contenedor-inputs {
