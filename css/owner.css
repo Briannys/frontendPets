@@ -132,9 +132,8 @@ header {
 
   .box {
     position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 34%;
+    margin-top: 30px;
     width: 600px;
     padding: 2.5rem;
     box-sizing: border-box;
@@ -245,4 +244,11 @@ header {
 	color: white;
 	min-width: 50px;
 	text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
   }

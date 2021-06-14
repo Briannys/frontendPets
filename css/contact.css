@@ -249,6 +249,7 @@ header {
   }
   
   .input-field:focus {
+	background: rgba(65, 124, 184, 0.274);
 	border: 0px solid rgb(136, 170, 204);
   }
 
