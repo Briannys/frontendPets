@@ -75,11 +75,19 @@ div#header {
 ul {
     float: right;
     margin-top: 0%;
+
 }.contenedor-inputs img{
     float: left;
     
     width: 50px;
     height: 50px;
+
+}
+
+.input user{
+	width: 100%;
+	background: blue;
+
 }
 
 .container {
@@ -117,8 +125,15 @@ h1 {
     margin-top: -80px;
     font-weight: 600;
     color: white;
+
     
 }
+h5{
+	color: white;
+	 text-align: center;
+	
+	 font-weight: bold;
+ }
 
 .container .images:hover {
     transform: translate(-15px);
@@ -334,16 +349,15 @@ h1 {
 .popup form .contenedor-inputs input {
 	width: 85%;
 	margin-bottom: 20px;
-	height: 45px;
+	height: 48px;
 	font-size: 18px;
 	line-height: 52px;
 	text-align: center;
-	border: 1px solid #BBBBBB;
+	border: none;
+	padding: 10px;
+	outline: none;
+
 }
-
-
-
-
 
 .popup form .btn-submit {
 	padding: 0 20px;
@@ -428,6 +442,111 @@ h1 {
 .popupVet form .contenedor-inputs {
 	opacity: 0;
 }
+
+
+
+ }
+
+.overlaySignin{
+    background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+
+}
+
+.overlaySignin .popupSignin {
+	width: 40%;
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.overlaySignin.active {
+	visibility: visible;
+}
+
+.popupSignin {
+	background: #F8F8F8;
+	border: 3px #000;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.overlaySignin .popupSignin .btn-cerrar-popupSignin {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.overlaySignin .popupSignin .btn-cerrar-popupSignin:hover {
+	color: #000;
+
+}
+
+.overlaySignin .popupSignin h4 {
+	font-size: 26px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	opacity: 0;
+}
+
+.overlaySignin .popupSignin .images {
+	width: 40%;
+    align-content: center;
+}
+
+.overlaySignin .popupSignin .images h4 {
+	text-align: center;
+    margin-top: -80px;
+    font-weight: 600;
+    color: black;
+}
+
+.overlaySignin .popupSignin .images img {
+	border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.overlaySignin .popupSignin .images:hover{
+	transform: translate(-15px);
+    transition: 0.5s;
+    box-shadow: 0 12px 14px rgba(0, 0, 0, 2);
+}
+
+
+.popupSignin.active {	
+	transform: scale(1); opacity: 1; 
+}
+
+.popupSignin.active h4 { 
+	animation: entradaSubtitulo 0s ease .0s forwards; 
+}
+.popupSignin.active .contenedor-inputs { 
+	animation: entradaInputs 0s linear 0s forwards; 
+}
+
 .contenedor-inputs img{
     float: left;
     
@@ -443,7 +562,7 @@ h1 {
 	font-size: 18px;
 	line-height: 52px;
 	text-align: center;
-	border: 1px solid #BBBBBB;
+	border: none;
 }
 
 .popupVet form .btn-submit {
@@ -542,7 +661,7 @@ h1 {
 	font-size: 18px;
 	line-height: 52px;
 	text-align: center;
-	border: 1px solid #BBBBBB;
+	border: none;
 }
 
 .popupOff form .btn-submit {
@@ -579,6 +698,15 @@ h1 {
 .RegiOFF:hover{
     text-decoration-color: blue;
 
+}
+.icon {
+	padding: 15px;
+	background: rgb(105, 123, 141);
+	color: white;
+	min-width: 50px;
+	min-height: 45px;
+	text-align: center;
+	border-right: 0px;
 }
 @keyframes entradaTitulo {
 	from {
