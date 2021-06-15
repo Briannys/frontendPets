@@ -2,12 +2,12 @@
 
 html,
 body {
-    background-image: url("https://i.ibb.co/6vRLxcw/background-Owner.png");
+    background-image: url("https://i.ibb.co/xMJZHBC/background-Owner-2.png");
+    background-color: #EDDDDB;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #464646;
 }
 
 
@@ -32,6 +32,12 @@ header {
     cursor: pointer;
     margin-right: auto;
 }
+
+.logoUser{
+    width: 6%;
+    margin-top: -5px;
+  }
+  
 
 .nav_links {
     list-style: none;
