@@ -11,7 +11,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="Css/owner.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <title>4-legged citizens</title>
+    <title>Create Pet</title>
 </head>
 
 <body>
@@ -20,15 +20,18 @@
    
     <header>
       <img class="logo" src="https://i.ibb.co/ckDdYBB/Ciudadados-de-4-Patas.png" alt="logo">
+        <nav>
+          <ul class="nav_links">
+            <li><a href="funtionOwner.html">Home</a></li>
+            <li><a href="#" id="">Your Pets</a></li>
+          </ul>
+        </nav>
+      <a class= "cta" href="contact.html"><button>Contact</button></a>
       <nav>
         <ul class="nav_links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#" id="">Create Pet</a></li>
-          <li><a href="#">Modificate Pet</a></li>
-          <li><a href="#" id="">Your Pets</a></li>
+          <li><a href="index.html" id="bton-signin">Log out</a></li>
         </ul>
       </nav>
-      <a class= "cta" href="contact.html"><button>Contact</button></a>
     </header>
     </nav>
 
@@ -69,15 +72,14 @@
           </div>
 
           <div class="inputBox">
-            <input type="file" name="file" class="file" required onkeyup="this.setAttribute('value', this.value);" value="">
-            
-        </div>
+              <input type="file" name="file" class="file" required onkeyup="this.setAttribute('value', this.value);" value=""> 
+          </div>
 
           <input type="submit" name="sign-in" value="Create Pet">
         </form>
-      </div>
-    </section>
-    <script src="js/popup.js"></script>
+    </div>
+  </section>
 
+  <script src="js/popup.js"></script>
 </body>
 </html>
