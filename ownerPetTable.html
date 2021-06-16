@@ -33,7 +33,7 @@
       </header>
 
     </nav>
-    <div id="table-container">
+    <div class="table-container" id="table-container">
         <table class="table table-primary table-striped">
             <thead>
             <tr>
@@ -45,27 +45,47 @@
                 <th>Size</th>
                 <th>Sex</th>
                 <th>Picture</th>
-                <th>Update Pet</th>
-                <th>Create case</th>
             </tr>
             </thead>
             <tbody id="res">
-                <td></td>
-                <td></td>
-                <td> </td>
-                <td></td>
-                <td></td>
-                <td> </td>
-                <td></td>
-                <td> </td>
-                <td>
-                     <a class= "cta" href="#" id="bton-owner"><button>Update</button></a>
-                </td>
-                <td>
-                    <a class= "cta" href="#" id="bton-vet"><button>Case</button></a>
-                </td>
+              <tr>
+                <td>ggg</td>
+                <td>hdhdhhd</td>
+                <td> dhdhhd</td>
+                <td>yywywyww</td>
+                <td>gdggdgd</td>
+                <td> gsggsss</td>
+                <td>ggsgssg</td>
+                <td> dhgdhdh</td>
+              </tr>
+              <tr>
+                <td>ggg</td>
+                <td>hdhdhhd</td>
+                <td> dhdhhd</td>
+                <td>yywywyww</td>
+                <td>gdggdgd</td>
+                <td> gsggsss</td>
+                <td>ggsgssg</td>
+                <td> dhgdhdh</td>
+              </tr>
+                <tr>
+                  <td>ggg</td>
+                  <td>hdhdhhd</td>
+                  <td> dhdhhd</td>
+                  <td>yywywyww</td>
+                  <td>gdggdgd</td>
+                  <td> gsggsss</td>
+                  <td>ggsgssg</td>
+                  <td> dhgdhdh</td>
+                </tr>
             </tbody>
         </table>
+       
+    </div>
+
+    <div class="buttons">
+      <a class= "cta" href="#" id="bton-owner"><button>Update</button></a>
+      <a class= "cta" href="#" id="bton-vet"><button>Case</button></a>
     </div>
     
     <div class="overlay" id="overlay">
@@ -73,6 +93,12 @@
           <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
           <h3>Update Pet</h3>
           <form action="" style="max-width:500px;margin:auto">
+
+            <div class="inputBox">
+              <input type="number" name="id" required onkeyup="this.setAttribute('value', this.value);" value="">
+              <label>ID of Pet</label>
+            </div>
+
             <div class="inputBox">
               <input type="number" name="microchip" required onkeyup="this.setAttribute('value', this.value);" value="">
               <label>Microchip</label>
