@@ -25,8 +25,8 @@
         <img class="logo" src="https://i.ibb.co/ckDdYBB/Ciudadados-de-4-Patas.png" alt="logo">
           <nav>
             <ul class="nav_links">
-              <li><a href="funtionOwner.html">Home</a></li>
-              <li><a href="createPet.html" id="">Create Pet</a></li>
+              <li><a href="funtionVet.html">Home</a></li>
+              <li><a href="visitPetVet.html" id="">Create Visit</a></li>
             </ul>
           </nav>
         <a class= "cta" href="contact.html"><button>Contact</button></a>
@@ -42,18 +42,26 @@
     <div class="container">
         <form action="" class="form">
             <h1 class="title">All visits of:</h1>
-            <label for="filtrar" class="label"></label>
-            <label for="selectLibro" class="form-label">Selecciona cliente<select name="selectLibro" id="selectLibro" class="form-selec" required>
-                <option class="form-option"></option>
-                <option class="form-option">ejemplo</option>
-            </select></label>
-            <label for="date" class="form-label">Selecciona el rango de fechas:  </label>
-            <label for="fromperiod">   Desde</label>
-            <input type="text" id="fromperiod" name="from">
-            <label for="toperiod">hasta</label>
-            <input type="text" id="toperiod" name="to">
-
-            <input type="submit" value="Enviar" onclick="" class="submit">
+            <label for="">Selecciona nombre de la mascota:</label> 
+            <label for="" class="form-label">Selecciona el rango de fechas:  </label>
+            <div class="input-group">
+              <div class="sele">
+                <select name="petsVet" id="">
+                  <option value="">ejemplo</option>
+                </select>
+              </div>
+                <div class="date">
+                  <label for="fromperiod" class="Desde">Desde</label>
+                  <input type="text" id="fromperiod" name="from">
+                  <label for="toperiod">hasta</label>
+                  <input type="text" id="toperiod" name="to">
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-search"></i>
+                  </button>
+              </div>
+              </div>
+              
+            
     </form>
     </div>
 
@@ -65,8 +73,8 @@
                 <th>Create at</th>
                 <th>Type</th>
                 <th>Description</th>
-                <th>Vet ID</th>
-                <th>Pet ID</th>
+                <th>ID Vet</th>
+                <th>ID Pet</th>
             </tr>
             </thead>
             <tbody id="res">
