@@ -88,34 +88,29 @@
                     <option value="audi">Control</option>   
                     </select>
                 </div>
+
+                <div class="inputBox">
+                    <input type="text" id="microchi" name="microchi" disabled=true required onkeyup="this.setAttribute('value', this.value);" value="">
+                    <label>Microchip</label>
+                  </div>
   
             <div class="inputBox">
-                <textarea id="comments" class="input" name="comments" rows="7" cols="30"></textarea><br />
+                <textarea id="description" class="input" name="description" rows="7" cols="30"></textarea><br />
                 <label>Description:</label>
             </div>
 
-            <div class="inputBox">
-                <input type="text" id="size" name="size" disabled=true required onkeyup="this.setAttribute('value', this.value);" value="">
-                <label>Size</label>
-              </div>
-    
-              <div class="inputBox">
-                <input type="text" name="sex" required onkeyup="this.setAttribute('value', this.value);" value="">
-                <label>Sex</label>
-              </div>
+
             <input type="submit" name="sign-in" value="Create case">
           </form>
       </div>
     </div>
 <script>
-
     document.getElementById("visit").onchange = function() {
         if (this.value == 'micro') {
             var optionID=document.getElementById('microchip');
-            alert(optionID.value);
-    document.getElementById("size").disabled = false;
+    document.getElementById("microchi").disabled = false;
         }else
-        document.getElementById("size").disabled = true;
+        document.getElementById("microchi").disabled = true;
     }
 </script>
 
